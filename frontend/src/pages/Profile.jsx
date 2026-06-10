@@ -30,7 +30,7 @@ if (!user) {
       try {
         const response =
           await axios.get(
-            `http://localhost:5000/badges/${user.email}`
+            `${import.meta.env.VITE_API_URL}/badges/${user.email}`
           );
 
         setBadges(

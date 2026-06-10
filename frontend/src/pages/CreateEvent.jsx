@@ -26,7 +26,7 @@ function CreateEvent({ user }) {
     async () => {
       try {
         await axios.post(
-          "http://localhost:5000/events",
+          `${import.meta.env.VITE_API_URL}/events`,
           {
             ...event,
             organizerEmail:

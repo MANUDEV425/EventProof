@@ -48,7 +48,7 @@ function Events({ user }) {
       try {
         const response =
           await axios.get(
-            "http://localhost:5000/events"
+             `${import.meta.env.VITE_API_URL}/events`
           );
 
         setEvents(
@@ -72,7 +72,7 @@ function Events({ user }) {
       try {
 
         await axios.post(
-          "http://localhost:5000/register",
+          `${import.meta.env.VITE_API_URL}/register`,
           {
             userEmail:
               user.email,
@@ -87,7 +87,7 @@ function Events({ user }) {
 
         const response =
           await axios.get(
-            `http://localhost:5000/events/${eventId}/quizzes`
+            `${import.meta.env.VITE_API_URL}/events/${eventId}/quizzes`
           );
 
         setSelectedEvent(
@@ -154,7 +154,7 @@ function Events({ user }) {
 
         const response =
           await axios.get(
-            `http://localhost:5000/events/${eventId}/quizzes`
+            `${import.meta.env.VITE_API_URL}/events/${eventId}/quizzes`
           );
 
         setOpenedQuiz(
@@ -202,7 +202,7 @@ function Events({ user }) {
 
         const response =
           await axios.post(
-            "http://localhost:5000/results",
+            `${import.meta.env.VITE_API_URL}/results`,
             {
               userEmail:
                 user.email,
