@@ -1,16 +1,30 @@
-# React + Vite
+# 🚀 EventProof
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+EventProof is an AI-powered event platform that allows users to create events, register for them, participate in automatically generated quizzes, and earn badges.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🔐 Google Authentication (Firebase)
+- 📅 Event Creation & Registration
+- 🤖 AI-Generated MCQ Quizzes (Groq + Llama 3.3)
+- 🏆 Badge System
+- 📊 Automatic Quiz Evaluation
+- 👤 User Profiles
+- 🌙 Modern Responsive UI
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Frontend:
+- React
+- Vite
+- Axios
+- React Router
 
-## Expanding the ESLint configuration
+Backend:
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Firebase
+- Groq API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Developed by Manudev Sharma.
